@@ -1,0 +1,68 @@
+/* CSS Document */
+
+#container{width:600px;
+			height:auto; 
+		   padding:5px;
+		   border-style:solid;
+		    border-color:#333;
+		   margin-left:auto;
+		   margin-right:auto;
+		   }
+
+#one{
+	  padding:15px;
+	  border-color:#333;
+	 margin:2px;
+	  border-style:solid;
+
+	  }
+
+
+		 
+		  
+			
+#two {
+	 padding:15px;
+		 border-color:#333;
+	 margin:2px;
+		  border-style:solid;
+		  height:50px;
+		  
+		  }
+		  
+#three{ 
+    
+	  
+	   padding:15px;
+	  padding:5px;
+	  border-color:#333;
+	 margin:2px;
+	   border-style:solid;
+	  height:80px;
+	  clear:both;
+	  
+	}
+	#table{ 
+    
+	  
+	   padding:15px;
+	  padding:5px;
+	  border-color:#333;
+	 margin:2px;
+	   border-style:solid;
+	  
+	  clear:both;
+	  
+	}
+	
+	#last{
+		padding:10px;
+		margin-left:10px;
+	}
+#sign{
+	color:#36C;
+	font-size:14px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	
+
+}

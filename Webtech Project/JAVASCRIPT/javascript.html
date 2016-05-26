@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link type="text/css" href="javascriptdiv.css" rel="stylesheet" />
+
+<script type="text/javascript">
+//Display Date here
+
+
+var a,b, months=0, days=0, hours=0, minutes=0, seconds=0;  
+
+function computeko(myform)    
+{ 
+  a=(myform.age.value);  		// a will hold the value typed in textfield named Age
+  month = eval(parseInt(a)* 12);   // eval function  convert the string inputs as expression
+  myform.months.value =month;  		// sum will be displayed in textfield named monhts
+  
+  day = eval(parseInt(a)* 365);   // eval function  convert the string inputs as expression
+  myform.days.value =day;  		
+  
+  hour = eval(parseInt(a)* 8760 );   // eval function  convert the string inputs as expression
+  myform.hours.value =hour;  		
+  
+   minute= eval(parseInt(a)* 525600 );   // eval function  convert the string inputs as expression
+  myform.minutes.value =minute;  
+  
+   second= eval(parseInt(a)* 31536000 );   // eval function  convert the string inputs as expression
+  myform.seconds.value =second; 
+  		
+  
+}
+
+
+function reset(myform) {
+	b=(myform.age.value);
+	}
+</script>
+
+
+</head>
+
+<body>
+<form name="myform">
+
+<div id="container" >
+<div id="one"> <h1 style="color:#F00" align="center" > My Age Computed Here </h1>
+</div>
+<div id="two">
+How Old Are You ?: &nbsp; &nbsp; &nbsp; <input type="text" size =50 name="age" />
+</div>
+<div id="three"> <h1 align="center"> Convert Age Here </h1>
+</div>
+
+<div id="table" >
+<table> 
+<tr> <td>  In Months :</td> <td>  <input type="text" size =50 name="months" disabled="disabled" />
+</td>
+</tr>
+<tr> <td> In Days : </td> <td> <input type="text" size =50 name="days" disabled="disabled" />
+</td>
+</tr>
+<tr>
+ <td> In Hours : </td> <td> <input type="text" size =50 name="hours"  disabled="disabled" />
+</td>
+</tr>
+<tr>
+ <td> In Minutes : </td> <td> <input type="text" size =50 name="minutes" disabled="disabled" />
+</td>
+</tr>
+<tr>
+ <td> In Seconds : </td> <td> <input type="text" size =50 name="seconds" disabled="disabled" />
+</td>
+</tr>
+
+
+</table>
+<div id="last" >
+
+<input type="button" value="Gogo" name="Gogo" Onclick="computeko(myform)" /> 
+
+<input type="button" value="Reset" name="Rest" Onclick="reset(myform)" /> &nbsp; &nbsp; &nbsp; &nbsp;  <span id= "sign"> Designed By Jaspreet </span>
+</div>
+</div>
+</div>
+</form>
+</body>
+</html>
